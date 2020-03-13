@@ -1,0 +1,107 @@
+@media screen and (max-width: 1024px) {
+    body {
+        /* background-color: rgba(100, 200, 222, 0.3); */
+    }
+    /* main {
+        font-size: 1.5rem;
+    } */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Header
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    header {
+        height: 64px;
+        /* width: 375px; */
+    }
+    header #hamburger-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 64px;
+    }
+    header #logo {
+        font-size: 2.3rem;
+    }
+    header #hamburger #hamburger-content,
+    main #categories_nav {
+        display: none;
+    }
+
+    #hamburger-button,
+    #hamburger-sidebar,
+    .hamburger-activated #hamburger-overlay {
+        display: block;
+    }
+    .hamburger-activated #hamburger-sidebar {
+        transform: translateX(0);
+    }
+    #recommendations {
+        height: 50rem;
+    }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Properties-Content
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    #properties-content-version-desktop,
+    #properties-content-nav {
+        display: none;
+    }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    footer {
+        padding-bottom: 54px;
+    }
+    #basket #basket-content {
+        width: 100%;
+        height: 80%;
+        top: initial;
+        bottom: 0;
+    }
+
+}
+@media (min-width: 1025px) {
+    body {
+        background-color: orange;
+        /* font-size: 2rem; */
+    }
+    header #hamburger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #product {
+        display: flex;
+        justify-content: space-between;
+    }
+    #product .product-img {
+        width: 30%;
+    }
+    #product .product-description .case-buy {
+        position: relative;
+        margin: 2rem 2rem;
+        width: initial;
+        height: initial;
+        justify-content: initial;
+        align-items: initial;
+        box-shadow: none;
+    }
+    #product .product-description .case-buy button.button-basket,
+    #product .product-description .case-buy ul {
+        display: block;
+    }
+    #product .product-description .case-buy #quantity {
+        margin: 0 0 0 10rem;
+    }
+    #product .product-description .case-buy button.button-basket {
+        margin: 2rem 0;
+
+    }
+    #product .product-description .case-buy .product-price {
+        position: absolute;
+    }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Properties-Content
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    #properties-content-version-mobile {
+        display: none;
+    }
+}
